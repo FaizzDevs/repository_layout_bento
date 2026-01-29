@@ -90,4 +90,21 @@ body {
         0% { transform: translateX(0) }
         100% { transform: translateX(-50%) }
     }
+
+    .typewriter-font {
+        font-family: "Courier Prime", monospace
+    }
+
+    .handwritten-font {
+        font-family: 'Caveat', cursive
+    }
+
+    .terminal-font {
+        font-family: 'JetBrains Mono', monospace
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1 }
+        50% { opacity: 0 }
+    }
 }
