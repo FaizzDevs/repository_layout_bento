@@ -90,7 +90,7 @@ export default function Contact() {
                                 <label className="shrink-0 text-[#888] w-20">
                                     Name:
                                 </label>
-                                <div className="flex-1 flex items-center bg-[#1a1a1a] border border-[#333] rounded px-3 py-2">
+                                <div className="flex-1 flex items-center rounded px-3 py-2">
                                     <span className="text-neon-green mr-2">[input]</span>
                                     <input
                                         name="name"
@@ -107,7 +107,7 @@ export default function Contact() {
                                 <label className="shrink-0 text-[#888] w-20">
                                     Email:
                                 </label>
-                                <div className="flex-1 flex items-center bg-[#1a1a1a] border border-[#333] rounded px-3 py-2">
+                                <div className="flex-1 flex items-center rounded px-3 py-2">
                                     <span className="text-neon-blue mr-2">
                                         [input]
                                     </span>
@@ -115,7 +115,7 @@ export default function Contact() {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="terminal-input bg-transparent flex-1"
+                                        className="terminal-input bg-transparent flex-1 text-white"
                                         placeholder="email@address.com"
                                         required
                                     />
@@ -126,7 +126,7 @@ export default function Contact() {
                                 <label className="shrink-0 text-[#888]">
                                     Message:
                                 </label>
-                                <div className="flex items-start bg-[#1a1a1a] border border-[#333] rounded px-3 py-2">
+                                <div className="flex items-start rounded px-3 py-2">
                                     <span className="text-neon-purple mr-2 mt-1">
                                         [input]
                                     </span>

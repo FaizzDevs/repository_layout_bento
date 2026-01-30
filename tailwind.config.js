@@ -17,6 +17,10 @@ module.exports = {
                 'hot-pink': '#ff007a',
             },
 
+            boxShadow: {
+                brutalist: '4px 4px 0 var(--brutalist-black)'
+            },
+
             fontFamily: {
                 'space-grotesk': ['var(--font-space-grotesk)'],
                 'jetbrains-mono': ['var(--font-jetbrains-mono)'],

@@ -28,7 +28,7 @@ export default function Navigation() {
         <nav className={`sticky top-0 z-50 px-6 py-4 transition-all ${isScrolled ? 'bg-white/90 backdrop-blur-sm' : ''}`}>
             <div className="max-w-7xl mx-auto flex justify-between items-center bg-white border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                 <div className="text-2xl font-black tracking-tighter">
-                    AR // <span className="text-white bg-black px-2">DEV</span>
+                    FZ // <span className="text-white bg-black px-2">DEV</span>
                 </div>
 
                 <div className="hidden md:flex gap-8 font-bold uppercase text-sm italic">

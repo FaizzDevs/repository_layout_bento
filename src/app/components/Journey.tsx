@@ -78,7 +78,7 @@ export default function Journey() {
                         key={step.title}
                         className={`relative w-full max-w-lg mb-32 z-10 group ${step.position}`}
                     >
-                        <div className={`brutalist-card p-8 ${step.cardColor || 'bg-white'} hover:scale-105 transition-transform`}>
+                        <div className={`brutalist-card p-8 bg-white hover:scale-105 transition-transform`}>
                             <div className="flex items-center gap-4 mb-4">
                                 <span className="text-4xl">
                                     {step.emoji}
