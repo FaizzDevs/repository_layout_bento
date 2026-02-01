@@ -24,7 +24,7 @@ const caveat = Caveat({
 })
 
 export const metadata: Metadata = {
-    title: 'Faizz Dev&apos;s Portfolio',
+    title: "Faizz Dev's Portfolio",
     description: 'Turning coffee into scalable production-ready code'
 }
 
