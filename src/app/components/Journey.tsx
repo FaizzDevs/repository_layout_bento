@@ -114,7 +114,7 @@ export default function Journey() {
             </div>
 
             <h2
-                className="text-5xl font-black uppercase mb-24 text-center"
+                className="text-3xl md:text-5xl font-black uppercase mb-24 text-center"
             >
                 My Coding Journey
             </h2>
@@ -134,7 +134,7 @@ export default function Journey() {
                                 </span>
 
                                 <div>
-                                    <h3 className="text-2xl font-black uppercase tracking-tight">
+                                    <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight">
                                         {step.title}
                                     </h3>
                                     <span className={`text-xs font-black ${step.badgeColor} text-white px-2 py-0.5 mt-1 inline-block`}>
@@ -147,7 +147,7 @@ export default function Journey() {
                                 </div>
                             </div>
 
-                            <p className="typewriter-font text-lg leading-relaxed">
+                            <p className="typewriter-font text-sm md:text-lg leading-relaxed">
                                 {step.description}
                             </p>
 

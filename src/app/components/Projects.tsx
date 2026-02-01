@@ -51,12 +51,12 @@ export default function Projects() {
     })
 
     return (
-        <section id="projetcs" className="max-w-7xl mx-auto px-6 py-32">
+        <section id="projetcs" className="max-w-7xl mx-auto px-6 py-12 md:py-32">
             <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5 }}
-                className="text-5xl font-black uppercase mb-16 underline decoration-8 decoration-neon-purple underline-offset-8"
+                className="text-3xl md:text-5xl font-black uppercase mb-16 underline decoration-8 decoration-neon-purple underline-offset-8"
             >
                 Featured Builds
             </motion.h2>
@@ -72,7 +72,7 @@ export default function Projects() {
 
                     <div className="project-image-container h-[300px]">
                         <div 
-                            className="w-full h-full bg-center bg-cover transition-transform duration-700 group-hover:scale-110" 
+                            className="w-full h-full bg-center bg-no-repeat bg-contain md:bg-cover transition-transform duration-700 group-hover:scale-110" 
                             style={{ 
                                 backgroundImage: "url('/ss_dashboard.png')" 
                             }}
@@ -94,10 +94,10 @@ export default function Projects() {
 
                     <div className="p-6 flex flex-col justify-between flex-grow">
                         <div>
-                            <h3 className="text-3xl font-black uppercase mb-2 group-hover:text-neon-purple transition-colors">
+                            <h3 className="text-xl md:text-3xl font-black uppercase mb-2 group-hover:text-neon-purple transition-colors">
                                 Dashboard Internal
                             </h3>
-                            <p className="font-bold text-gray-600 mb-6">
+                            <p className="font-bold text-sm md:text-lg text-gray-600 mb-6">
                                 Developed an internal company dashboard to analyze operational data on monthly, quarterly, and yearly periods, enabling faster and more data-driven decision-making.
                             </p>
                         </div>
@@ -171,17 +171,17 @@ export default function Projects() {
                 className="md:col-span-4 brutalist-card p-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-8 border-4 border-black"
             >
                 <div className="text-black">
-                    <h3 className="text-4xl font-black uppercase mb-2 flex items-center gap-4">
+                    <h3 className="text-xl md:text-4xl font-black uppercase mb-2 flex items-center gap-4">
                         The Experiments // R&amp;D
                     </h3>
-                    <p className="font-black italic uppercase text-lg">
+                    <p className="font-black italic uppercase text-xs md:text-lg">
                         Exploring Code, Breaking Limits, Shipping Innovation
                     </p>
                 </div>
 
                 <div className="flex gap-4 shrink-0">
                     <div className="size-16 bg-white border-2 border-black rotate-12 flex items-center justify-center hover:rotate-0 transition-transform">
-                        <div className="text-black text-3xl"><Microscope size={30} /></div>
+                        <div className="text-black"><Microscope size={30} /></div>
                     </div>
 
                     <div className="size-16 bg-white border-2 border-black rotate-12 flex items-center justify-center hover:rotate-0 transition-transform">

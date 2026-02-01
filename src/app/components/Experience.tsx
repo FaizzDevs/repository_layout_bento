@@ -60,7 +60,7 @@ export default function Experience() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={ inView ? { opacity: 1, y: 0 } : {} }
                 transition={{ duration: 0.5 }}
-                className="text-5xl font-black uppercase mb-16 text-center italic"
+                className="text-3xl md:text-5xl font-black uppercase mb-16 text-center italic"
             >
                 The Grind
             </motion.h2>

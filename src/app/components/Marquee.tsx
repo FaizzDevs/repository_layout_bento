@@ -17,8 +17,8 @@ const techStack = [
 
 export default function Marquee() {
     return (
-        <div className="marquee-container bg-white py-6 overflow-hidden">
-            <div className="marquee-content gap-12 text-4xl font-black uppercase italic items-center">
+        <div className="marquee-container bg-white py-2 md:py-6 overflow-hidden">
+            <div className="marquee-content md:gap-12 text-xl md:text-4xl font-black uppercase italic items-center">
                 {[...techStack, ...techStack].map((tech, index) => (
                     <motion.span
                         key={index}

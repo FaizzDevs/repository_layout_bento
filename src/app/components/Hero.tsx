@@ -12,7 +12,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20, rotate: -6 }}
                         animate={{ opacity: 1, y: 0, rotate: -6 }}
                         transition={{ duration: 0.5 }}
-                        className="inline-block bg-black text-white px-4 py-1 mb-6 text-sm font-black italic transform -rotate-6"
+                        className="inline-block bg-black text-white px-4 py-1 mb-6 md:text-sm font-black italic transform -rotate-6 text-xs"
                     >
                         AVAILABLE FOR COLLAB WITH YOU
                     </motion.div>
@@ -21,16 +21,16 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
-                        className="text-6xl md:text-9xl font-black tracking-tighter leading-[0.85] uppercase mb-8"
+                        className="text-5xl md:text-9xl font-black flex flex-col gap-1 tracking-tighter leading-[0.85] uppercase mb-8"
                     >
-                        Fullstack <br /> Dev // <br /> <span className="bg-neon-purple text-white px-4">faizz dev's</span>
+                        Fullstack <br /> Dev // <br /> <span className="bg-neon-purple py-2 text-white px-4">faizz dev&apos;s</span>
                     </motion.h1>
 
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="text-xl md:text-2xl font-medium max-w-2xl leading-tight mb-10 border-l-8 border-black pl-6"
+                        className="text-base md:text-2xl font-medium max-w-2xl leading-tight mb-10 border-l-8 border-black pl-6"
                     >
                         Turning coffee into scalable production-ready code, Focused on {' '}
                         <span className="italic underline decoration-4 decoration-neon-blue">Next.js magic</span> and{' '}
@@ -47,7 +47,7 @@ export default function Hero() {
                             href="https://github.com/FaizzDevs"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="brutalist-card bg-white text-black px-8 py-4 font-black uppercase text-lg flex items-center gap-2 hover:scale-105 transition-transform"
+                            className="brutalist-card bg-white text-black px-4 py-2 md:px-8 md:py-4 font-black uppercase text-xs md:text-lg flex items-center gap-2 hover:scale-105 transition-transform"
                         >
                             Github <Terminal size={20} />
                         </a>
@@ -55,7 +55,7 @@ export default function Hero() {
                             href="https://www.linkedin.com/in/muhammadfaizalizza/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="brutalist-card bg-white text-black px-8 py-4 font-black uppercase text-lg flex items-center gap-2 hover:scale-105 transition-transform"
+                            className="brutalist-card bg-white text-black px-4 py-2 md:px-8 md:py-4 font-black uppercase text-xs md:text-lg flex items-center gap-2 hover:scale-105 transition-transform"
                         >
                             LinkedIn <ExternalLink size={20} />
                         </a>

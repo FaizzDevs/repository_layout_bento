@@ -60,7 +60,7 @@ export default function Skills() {
                         initial={{ opacity: 0, x: -50 }}
                         animate={ inView ? { opacity: 1, x: 0 } : {} }
                         transition={{ duration: 0.5 }}
-                        className="text-5xl font-black uppercase mb-16 text-right"
+                        className="text-3xl md:text-5xl font-black uppercase mb-16 text-right"
                     >
                         The Toolkit
                     </motion.h2>
@@ -85,7 +85,7 @@ export default function Skills() {
                                             initial={{ opacity: 0, scale: 0.8 }}
                                             animate={ inView ? { opacity: 1, scale: 1 } : {} }
                                             transition={{ duration: 0.2, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                                            className={`px-4 py-2 bg-zinc-900 border border-zinc-700 ${category.colorBg} hover:text-black transition-all font-bold rounded-full cursor-default`}
+                                            className={`px-4 py-2 bg-zinc-900 border border-zinc-700 ${category.colorBg} hover:text-black transition-all font-bold rounded-full cursor-default text-xs md:text-lg`}
                                         >
                                             {skill}
                                         </motion.span>

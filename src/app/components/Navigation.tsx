@@ -26,8 +26,8 @@ export default function Navigation() {
 
     return (
         <nav className={`sticky top-0 z-50 px-6 py-4 transition-all ${isScrolled ? 'bg-white/90 backdrop-blur-sm' : ''}`}>
-            <div className="max-w-7xl mx-auto flex justify-between items-center bg-white border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                <div className="text-2xl font-black tracking-tighter">
+            <div className="max-w-7xl mx-auto flex justify-between items-center bg-white border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                <div className="text-lg md:text-2xl font-black tracking-tighter">
                     FZ // <span className="text-white bg-black px-2">DEV</span>
                 </div>
 
@@ -78,25 +78,25 @@ export default function Navigation() {
                     <div className="flex flex-col p-4 space-y-4">
                         <button
                             onClick={() => scrollToSection('projects')}
-                            className="font-bold uppercase text-lg py-3 border-b border-gray-200"
+                            className="font-bold uppercase text-base py-3 border-b border-gray-200"
                         >
                             Projects
                         </button>
                         <button
                             onClick={() => scrollToSection('skills')}
-                            className="font-bold uppercase text-lg py-3 border-b border-gray-200"
+                            className="font-bold uppercase text-base py-3 border-b border-gray-200"
                         >
                             Stack
                         </button>
                         <button
                             onClick={() => scrollToSection('experience')}
-                            className="font-bold uppercase text-lg py-3 border-b border-gray-200"
+                            className="font-bold uppercase text-base py-3 border-b border-gray-200"
                         >
                             Path
                         </button>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="font-bold uppercase text-lg py-3"
+                            className="font-bold uppercase text-base py-3"
                         >
                             Connect
                         </button>

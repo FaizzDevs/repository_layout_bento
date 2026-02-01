@@ -47,7 +47,7 @@ export default function Contact() {
         <section id="contact" className="max-w-7xl mx-auto px-6 py-32">
             <div className="max-w-4xl mx-auto">
                 <h2
-                    className="text-6xl font-black uppercase tracking-tighter leading-none mb-12 text-center"
+                    className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-12 text-center"
                 >
                     Get In Touch
                 </h2>
@@ -68,24 +68,24 @@ export default function Contact() {
 
                     <div className="p-6 text-[#f0f0f0] space-y-4">
                         <div className="flex gap-2">
-                            <span className="text-neon-green">
+                            <span className="text-neon-green text-xs md:text-lg">
                                 user@portfolio:~$
                             </span>
-                            <span>
+                            <span className="text-xs md:text-lg">
                                 contact --init
                             </span>
                         </div>
 
                         <div className="space-y-1">
-                            <p className="text-blue-400">
+                            <p className="text-blue-400 text-xs md:text-lg">
                                 Initializing communication channel...
                             </p>
                             {isSubmitted ? (
-                                <p className="text-neon-green">
+                                <p className="text-neon-green text-xs md:text-lg">
                                     Message send successfully!
                                 </p>
                             ): (
-                                <p className="text-neon-green">
+                                <p className="text-neon-green text-xs md:text-lg">
                                     Success!
                                 </p>
                             )}
@@ -97,12 +97,12 @@ export default function Contact() {
                                     Name:
                                 </label>
                                 <div className="flex-1 flex items-center rounded px-3 py-2">
-                                    <span className="text-neon-green mr-2">[input]</span>
+                                    <span className="text-neon-green mr-2 text-xs md:text-lg">[input]</span>
                                     <input
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="terminal-input bg-transparent flex-1"
+                                        className="terminal-input bg-transparent flex-1 text-xs md:text-lg"
                                         placeholder="your_name"
                                         required
                                     />
@@ -114,14 +114,14 @@ export default function Contact() {
                                     Email:
                                 </label>
                                 <div className="flex-1 flex items-center rounded px-3 py-2">
-                                    <span className="text-neon-blue mr-2">
+                                    <span className="text-neon-blue mr-2 text-xs md:text-lg">
                                         [input]
                                     </span>
                                     <input 
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="terminal-input bg-transparent flex-1 text-white"
+                                        className="terminal-input bg-transparent flex-1 text-white text-xs md:text-lg"
                                         placeholder="email@address.com"
                                         required
                                     />
@@ -133,14 +133,14 @@ export default function Contact() {
                                     Message:
                                 </label>
                                 <div className="flex items-start rounded px-3 py-2">
-                                    <span className="text-neon-purple mr-2 mt-1">
+                                    <span className="text-neon-purple mr-2 mt-1 text-xs md:text-lg">
                                         [input]
                                     </span>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        className="terminal-input bg-transparent flex-1 min-h-[100px] resize-none"
+                                        className="terminal-input bg-transparent flex-1 min-h-[100px] resize-none text-xs md:text-lg"
                                         placeholder="write your brief here..."
                                         required
                                     />
@@ -151,7 +151,7 @@ export default function Contact() {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`bg-neon-green text-black px-6 py-2 font-bold uppercase hover:bg-white transition-colors flex items-center gap-2 ${
+                                    className={`bg-neon-green text-black px-6 py-2 font-bold uppercase hover:bg-white text-xs md:text-lg transition-colors flex items-center gap-2 ${
                                         isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                                     }`}
                                 >

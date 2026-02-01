@@ -27,6 +27,12 @@ body {
         position: relative;
         overflow: hidden;
     }
+
+    @media (max-width: 640px) {
+        .brutalist-card {
+            box-shadow: 4px 4px 0 0 var(--brutalist-black);
+        }
+    }
     
     .brutalist-card:hover {
         transform: translate(-4px, -4px);
