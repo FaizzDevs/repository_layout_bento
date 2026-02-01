@@ -24,8 +24,8 @@ const caveat = Caveat({
 })
 
 export const metadata: Metadata = {
-    title: 'FULLSTACK WIZARD // ALEX RIVERA',
-    description: 'Turning caffeine into scalable production-ready code'
+    title: 'PORTFOLIO FAIZZ DEV"S',
+    description: 'Turning coffee into scalable production-ready code'
 }
 
 export default function RootLayout({

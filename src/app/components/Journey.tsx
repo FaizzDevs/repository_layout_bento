@@ -1,40 +1,89 @@
 'use client'
 
-import { motion } from "framer-motion"
 import { Briefcase, Code, Coffee, Rocket } from "lucide-react"
 import { useInView } from "react-intersection-observer"
 
 const journeySteps = [
     {
-        emoji: '🐣',
-        title: 'The First Hello World',
-        year: 'EST. 2016',
-        description: 'it started in a dusty library. saw a green terminal window and thought i was in the matrix. typed my first print statement and felt like a literal god. never looked back.',
+        emoji: '👶',
+        title: 'First Line of Code',
+        year: '2020',
+        description: 'first time touching code when i started college. from zero, learning logic, algorithms, and meeting my first errors. realized that coding is not just typing, it’s a way of thinking.',
         icon: <Code className="w-6 h-6" />,
-        label: 'ORIGIN_STORY.EXE',
+        label: 'HELLO_WORLD_2020',
         position: 'md:ml-20',
         badgeColor: 'bg-neon-blue',
     },
     {
-        emoji: '☕',
-        title: 'The Bootcamp Grind',
-        year: 'WINTER 2018',
-        description: '12 hours of coding. 4 hours of sleep. infinite cups of coffee. learned that "it works on my machine" is a lie we tell ourselves to cope with the pain.',
-        icon: <Coffee className="w-6 h-6" />,
-        label: 'LEVELING_UP_V3',
+        emoji: '🤖',
+        title: 'Joining UTY Robotics Club',
+        year: '2021 – 2024',
+        description: 'joined UTY Robotics Club in my second year. started building real systems for robots, sensors, and control. learned teamwork, field debugging, and building systems that must work in the real world.',
+        icon: <Code className="w-6 h-6" />,
+        label: 'ROBOT_LAB_MODE',
         position: 'md:-ml-20',
         badgeColor: 'bg-neon-purple',
     },
     {
-        emoji: '👔',
-        title: 'Landing My First Gig',
-        year: 'SUMMER 2020',
-        description: 'imposter syndrome hit hard. pushed my first production bug on day 3. fixed it in 10 mins. realized even seniors are just googling things. let\'s go.',
+        emoji: '👑',
+        title: 'Chairman & Leadership Mode',
+        year: '2022 – 2023',
+        description: 'trusted as Chairman of UTY Robotics Club. not only coding, but managing teams, roadmaps, and conflicts. learned that leadership is about systems, not just individual skills.',
         icon: <Briefcase className="w-6 h-6" />,
-        label: 'HIRED_AF',
+        label: 'LEADER_CORE',
         position: 'md:ml-20',
         badgeColor: 'bg-black',
         cardColor: 'bg-neon-green',
+    },
+    {
+        emoji: '🏁',
+        title: 'KRI – KRSRI Division',
+        year: '2024',
+        description: 'competed in KRI (KRSRI division). experienced national-level pressure. optimized systems, fixed last-minute bugs, and learned that reliability is everything.',
+        icon: <Code className="w-6 h-6" />,
+        label: 'KRI_KRSRI',
+        position: 'md:-ml-20',
+        badgeColor: 'bg-neon-blue',
+    },
+    {
+        emoji: '📚',
+        title: 'Polyglot Phase',
+        year: '2020 – 2024',
+        description: 'explored many languages: C++, PHP, Java, JavaScript, C#, and Python. tried different paradigms, until i found my comfort zone in JavaScript and TypeScript.',
+        icon: <Coffee className="w-6 h-6" />,
+        label: 'LANG_SWITCHER',
+        position: 'md:ml-20',
+        badgeColor: 'bg-neon-purple',
+    },
+    {
+        emoji: '🎓',
+        title: 'Graduate Mode: B.Sc. in Informatics',
+        year: 'August 2024',
+        description: 'graduated with a Bachelor’s degree in Informatics. not just a title, but an engineer mindset: debug, document, and build for real users.',
+        icon: <Briefcase className="w-6 h-6" />,
+        label: 'GRADUATED.EXE',
+        position: 'md:-ml-20',
+        badgeColor: 'bg-neon-green',
+    },
+    {
+        emoji: '🎯',
+        title: 'Master’s Journey & Scaling Up',
+        year: '2025 – NOW',
+        description: 'started my Master’s degree while continuously sharpening my skills. exploring new technologies, modern architectures, and additional programming languages. focused on building scalable, maintainable, production-grade systems.',
+        icon: <Code className="w-6 h-6" />,
+        label: 'NEXT_LEVEL_DEV',
+        position: 'md:-ml-20',
+        badgeColor: 'bg-neon-blue',
+    },
+    {
+        emoji: '💼',
+        title: 'Real Industry Experience',
+        year: '2024 – 2026',
+        description: 'interned as a Frontend Developer, worked at Shopee as a Customer Service Call agent, and at Impala Network as a Dashboard Developer. handled full frontend and backend for a company dashboard.',
+        icon: <Briefcase className="w-6 h-6" />,
+        label: 'INDUSTRY_READY',
+        position: 'md:ml-20',
+        badgeColor: 'bg-black',
     },
 ]
 
@@ -99,7 +148,7 @@ export default function Journey() {
                             </div>
 
                             <p className="typewriter-font text-lg leading-relaxed">
-                                &gt: {step.description}
+                                {step.description}
                             </p>
 
                             <div className={`absolute top-4 -right-1 ${step.badgeColor} text-white  font-black px-3 py-1 text-[10px] border-2 border-black rotate-12`}>

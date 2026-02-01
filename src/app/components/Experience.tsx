@@ -6,29 +6,46 @@ import { useInView } from "react-intersection-observer"
 
 const experiences = [
     {
-        year: '2022 - PRESENT',
-        title: 'Senior Fullstack Developer',
-        description: 'Leading core infra and feature development for high-growth startups.',
-        color: 'text-neon-purple',
-        icon: <CheckCircle className="w-5 h-5" />,
-        badges: ['Next.js', 'TypeScript', 'AWS'],
-    },
-    {
-        year: '2020 - 2022',
-        title: 'Software Engineer',
-        description: 'Built scalable APIs and interactive dashboards using React and Node.js.',
-        color: 'text-neon-green',
-        icon: <Award className="w-5 h-5" />,
-        badges: ['React', 'Node.js', 'PostgreSQL'],
-    },
-    {
-        year: '2018 - 2020',
-        title: 'B.S. Computer Science',
-        description: 'Focused on distributed systems and algorithmic optimization.',
+        year: '2025 - PRESENT',
+        title: 'M.Sc. Student (Master’s Degree)',
+        description: 'Pursuing a Master’s degree while continuing to sharpen software engineering skills and exploring advanced technologies and system architecture.',
         color: 'text-neon-blue',
         icon: <GraduationCap className="w-5 h-5" />,
-        badges: ['Distributed Systems', 'Algorithms', 'Data Structures'],
+        badges: ['Advanced Systems', 'Research', 'Software Architecture'],
     },
+    {
+        year: '2025 - 2026',
+        title: 'Dashboard Developer — Impala Network',
+        description: 'Developed internal company dashboards, managing both frontend and backend. Built data visualization and admin tools to support business operations.',
+        color: 'text-neon-purple',
+        icon: <Award className="w-5 h-5" />,
+        badges: ['Fullstack', 'Dashboard', 'API', 'Data Visualization'],
+    },
+    {
+        year: '2025',
+        title: 'Frontend Developer (Internship)',
+        description: 'Worked as a Frontend Developer intern, building responsive UI, integrating APIs, and improving user experience for real-world applications.',
+        color: 'text-neon-green',
+        icon: <Award className="w-5 h-5" />,
+        badges: ['Vue.js', 'Tailwind CSS', 'API Integration'],
+    },
+    {
+        year: '2024 - 2025',
+        title: 'Customer Service Call — Shopee',
+        description: 'Handled customer inquiries and problem resolution in a fast-paced environment. Developed strong communication, problem-solving, and operational workflow skills.',
+        color: 'text-neon-blue',
+        icon: <CheckCircle className="w-5 h-5" />,
+        badges: ['Communication', 'Problem Solving', 'Customer Support'],
+    },
+    {
+        year: '2020 - 2024',
+        title: 'B.Sc. in Informatics',
+        description: 'Studied computer science fundamentals, software engineering, and multiple programming languages. Graduated with strong foundations in system design and problem solving.',
+        color: 'text-neon-green',
+        icon: <GraduationCap className="w-5 h-5" />,
+        badges: ['Algorithms', 'OOP', 'Web Development', 'Databases'],
+    },
+    
 ]
 
 export default function Experience() {

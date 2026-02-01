@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
                 <div className="text-center md:text-left">
                     <div className="text-2xl font-black uppercase mb-2 italic tracking-tighter">
-                        Alex Rivers // 2024
+                        Muhammad Faiz // 2026
                     </div>
 
                     <p className="font-bold text-sm text-gray-500 uppercase tracking-widest">

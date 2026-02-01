@@ -18,16 +18,22 @@ export default function Contact() {
         e.preventDefault()
         setIsSubmitting(true)
 
-        await new Promise(resolve => setTimeout(resolve, 1500))
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
 
-        console.log('Form Submitted:', formData)
-        setIsSubmitting(false)
-        setIsSubmitted(true)
+            if (!res.ok) throw new Error('Failed to send')
 
-        setTimeout(() => {
-            setIsSubmitted(false)
+            setIsSubmitted(true)
             setFormData({ name: '', email: '', message: '' })
-        }, 3000)
+        } catch {
+            alert('Failed to send message. Please try again')
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -169,14 +175,14 @@ export default function Contact() {
                     <div className="flex items-center gap-3">
                         <Mail className="text-neon-purple" />
                         <span>
-                            hello@alexrivera.dev
+                            mfaizalizza@gmail.com
                         </span>
                     </div>
 
                     <div className="flex items-center gap-3">
                         <MessageSquare className="text-neon-blue" />
                         <span>
-                            @alexwiz_dev
+                            @faizalizza_
                         </span>
                     </div>
                 </div>
